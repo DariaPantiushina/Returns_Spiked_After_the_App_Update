@@ -70,12 +70,24 @@ Contains aggregated summary tables for reporting and visualization.
 
 4) D7 retention for new users in June 2025 (users with reg_date in June who have any event exactly on day 7 after reg_date);
 
-5) Proportion of orders refunded within 24 hours
+5) Proportion of orders refunded within 24 hours;
 
-6) Return Rate (RR) by cohort: Pre- vs. Post-Basket Redesign (May vs. June 2025)
+6) Return Rate (RR) by cohort: Pre- vs. Post-Basket Redesign (May vs. June 2025);
 
 7) Anti-join: drop-off among users who added to cart but did not complete payment
 
 ## Creating a dashboard in Power BI
 
-Dashboard (["dashboard"](power_bi/dashboard.pdf), also available via public link: https://app.powerbi.com/groups/me/reports/a637e7c4-fbc1-4969-80c6-93bcb5ebfc10?ctid=8d7391b6-6d66-4625-ada5-ff437c1a0e9c&pbi_source=linkShare) 
+["Dashboard"](power_bi/dashboard.pdf), also available via public link: https://app.powerbi.com/groups/me/reports/a637e7c4-fbc1-4969-80c6-93bcb5ebfc10?ctid=8d7391b6-6d66-4625-ada5-ff437c1a0e9c&pbi_source=linkShare):
+
+1) KPI Blocks: Orders, Refunds, Return Rate (RR%), Conversion to Payment (Conv%), Day-7 Retention (D7);
+
+2) Daily Return Rate (RR) - significant increase observed after June 15;
+
+3) Bar chart: Return Rate (RR) by device - Android + 3.79 p.p., iOS -0.68 p.p.;
+
+4) Highlighted Table: Return Rate (RR) by region;
+
+5) Checkout funnel comparison: May vs. June (UI update released in June);
+
+6) Table: Segments with the greatest increase in returns following the basket redesign  
