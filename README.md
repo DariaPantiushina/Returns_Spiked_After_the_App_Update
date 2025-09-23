@@ -59,3 +59,23 @@ Contains fact tables with transactional and event data.
 - **marts_segments** (date, device, region, channel, orders, refunds, return_rate)
 
 Contains aggregated summary tables for reporting and visualization.
+
+## SQL-Analysis
+
+1) Return Rate (RR) before vs after 2025-06-15 (UI release);
+
+2) Return Rate (RR) before vs after 2025-06-15 (UI release). A/B comparison segments by: Android vs iOS (device type); EU vs US vs ASIA (region); Paid vs Organic (user's channel);
+
+3) Checkout funnel: add_to_cart → checkout_start → payment_success → refund;
+
+4) D7 retention for new users in June 2025 (users with reg_date in June who have any event exactly on day 7 after reg_date);
+
+5) Proportion of orders refunded within 24 hours
+
+6) Return Rate (RR) by cohort: Pre- vs. Post-Basket Redesign (May vs. June 2025)
+
+7) Anti-join: drop-off among users who added to cart but did not complete payment
+
+## Creating a dashboard in Power BI
+
+Dashboard (["dashboard"](power_bi/dashboard.pdf), also available via public link: https://app.powerbi.com/groups/me/reports/a637e7c4-fbc1-4969-80c6-93bcb5ebfc10?ctid=8d7391b6-6d66-4625-ada5-ff437c1a0e9c&pbi_source=linkShare) 
