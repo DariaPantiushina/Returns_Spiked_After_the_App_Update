@@ -54,9 +54,9 @@ Contains fact tables with transactional and event data.
 
 4. marts_ (**Analytics Marts**)
 
-- **marts_kpi_daily** (date, orders, refunds, return_rate, conv_to_payment, conv_cart_to_checkout_pct, conv_checkout_to_payment_pct, refund_after_payment_pct, users_cart, users_checkout, users_payment, users_refund, d7_retention);
+- **marts_kpi_daily**(date, orders, refunds, return_rate, conv_to_payment, conv_cart_to_checkout_pct, conv_checkout_to_payment_pct, refund_after_payment_pct, users_cart, users_checkout, users_payment, users_refund, d7_retention);
 
-- **marts_segments** (date, device, region, channel, orders, refunds, return_rate)
+- **marts_segments**(date, device, region, channel, orders, refunds, return_rate)
 
 Contains aggregated summary tables for reporting and visualization.
 
@@ -76,7 +76,7 @@ Contains aggregated summary tables for reporting and visualization.
 
 7) Anti-join: drop-off among users who added to cart but did not complete payment
 
-## Creating a dashboard in Power BI
+## Creating a Dashboard in Power BI
 
 ["Dashboard"](power_bi/dashboard.pdf), also available via public link: https://app.powerbi.com/groups/me/reports/a637e7c4-fbc1-4969-80c6-93bcb5ebfc10?ctid=8d7391b6-6d66-4625-ada5-ff437c1a0e9c&pbi_source=linkShare):
 
@@ -90,4 +90,26 @@ Contains aggregated summary tables for reporting and visualization.
 
 5) Checkout funnel comparison: May vs. June (UI update released in June);
 
-6) Table: Segments with the greatest increase in returns following the basket redesign  
+6) Table: Segments with the greatest increase in returns following the basket redesign
+
+## Some Business Insights & Recommendations
+
+1) The overall Return Rate (RR) increased from 7.08% to 15.69% (+121.61%);
+
+2) Android EU Paid showed the highest increase, rising by +44.34 percentage points;
+
+3) iOS remained almost unchanged, suggesting the issue is specific to Android;
+
+4) Checkout-to-payment conversion fell by 41.95 percentage points in the same segment (Android EU Paid);
+
+5) The D7 retention of new users decreased from 54.09% in May to 50.80% in June;
+
+6) 12.78% of returns occur within the first 24 hours, suggesting a potential UX bug;
+
+7) Recommendations:
+
+- apply an Android UI hotfix;
+
+- test an alternative checkout via A/B testing
+
+8) Risks: rollback could lead to decreased conversion rates
