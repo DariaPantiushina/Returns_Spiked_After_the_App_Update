@@ -1,6 +1,6 @@
 # Returns Spiked After the App Update
 
-**Business context**: In June 2025, the mobile marketplace team launched a redesigned shopping cart (new checkout UI). Two weeks later, the refund rate had risen by 121.61%.
+**Business context**: In June 2025, the mobile marketplace team launched a redesigned shopping cart (new checkout UI). Two weeks later, the refund rate had risen from 7.08% to 15.69%.
 
 The product team raised **two questions**:
 
