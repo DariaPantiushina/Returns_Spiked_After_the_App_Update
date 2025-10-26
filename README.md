@@ -62,7 +62,7 @@ Contains fact tables with transactional and event data.
 
 Contains aggregated summary tables for reporting and visualization.
 
-## SQL-Analysis
+## SQL-analysis
 
 1) Return Rate (RR) before vs after 2025-06-15 (UI release);
 
@@ -77,6 +77,18 @@ Contains aggregated summary tables for reporting and visualization.
 6) Return Rate (RR) by cohort: Pre- vs. Post-Basket Redesign (May vs. June 2025);
 
 7) Anti-join: drop-off among users who added to cart but did not complete payment
+
+## Python-analysis: text clustering for customer comments
+
+Customer comments from the two weeks after launch were preprocessed (tokenized, lemmatized, stop words removed) and vectorized using TF-IDF. A K-Means model with 3 clusters was selected as optimal based on inertia and silhouette performance:
+
+- Cluster 0 (checkout usability & design confusion) - the dominant issue involves navigation friction and missing checkout controls;
+
+- Cluster 1 (customer support) - support interactions are largely positive;
+
+- Cluster 2 (cart functionality breakdown) - strong indications of a technical regression in cart behavior
+
+Overall conclusion → the text analysis points to a real, design-related and functional issue: most negative feedback centers on the checkout and cart flow.
 
 ## Creating a Dashboard in Power BI
 
