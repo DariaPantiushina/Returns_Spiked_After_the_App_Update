@@ -66,7 +66,7 @@ Contains aggregated summary tables for reporting and visualization.
 
 1) Return Rate (RR) before vs after 2025-06-15 (UI release);
 
-2) Return Rate (RR) before vs after 2025-06-15 (UI release). A/B comparison segments by: Android vs iOS (device type); EU vs US vs ASIA (region); Paid vs Organic (user's channel);
+2) Return Rate (RR) before vs after 2025-06-15 (UI release). A/B comparison segments (by Android vs iOS (device type); EU vs US vs ASIA (region); Paid vs Organic (user's channel)) + proportions z-test;
 
 3) Checkout funnel: add_to_cart → checkout_start → payment_success → refund;
 
@@ -110,7 +110,15 @@ Overall conclusion → the text analysis points to a real, design-related and fu
 
 1) The overall Return Rate (RR) increased from 7.08% to 15.69% (+121.61%);
 
-2) Android EU Paid showed the highest increase, rising by +44.34 percentage points. iOS remained almost unchanged, suggesting the issue is specific to Android;
+2) Based on the proportions z-test results: 
+
+- Android segments show statistically significant growth in return rate after the redesign, and especially Android + EU + Paid (a +44 percentage points spike, which is extreme);
+
+- iOS segments remain stable: no statistically significant shifts;
+
+→ this pattern shows that the problem is likely linked to the Android version of the new checkout UI, and not a global or backend problem;
+
+- Confidence Intervals, which stay entirely above zero, show that the increase for Android users is statistically real rather than random noise;
 
 3) Checkout-to-payment conversion fell by 41.95 percentage points in the same segment (Android EU Paid);
 
