@@ -116,9 +116,9 @@ Overall conclusion → the text analysis points to a real, design-related and fu
 
 - iOS segments remain stable: no statistically significant shifts;
 
-→ this pattern shows that the problem is likely linked to the Android version of the new checkout UI, and not a global or backend problem;
-
 - Confidence Intervals, which stay entirely above zero, show that the increase for Android users is statistically real rather than random noise;
+
+→ this pattern shows that the problem is likely linked to the Android version of the new checkout UI, and not a global or backend problem;
 
 3) Checkout-to-payment conversion fell by 41.95 percentage points in the same segment (Android EU Paid);
 
